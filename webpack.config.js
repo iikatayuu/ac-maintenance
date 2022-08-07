@@ -45,7 +45,7 @@ module.exports = {
   stats: 'errors-warnings',
   mode: process.env.NODE_ENV || 'development',
   performance: false,
-  devtool: 'source-map',
+  devtool: isProd ? false : 'source-map',
   entry: sources,
   output: {
     path: appBuild,
