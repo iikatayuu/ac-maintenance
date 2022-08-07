@@ -1,0 +1,31 @@
+
+@use "sass:map";
+@import "../../styles/variables";
+
+.details-view {
+  width: 30rem;
+
+  .details-group {
+    font-size: 1.15rem;
+
+    .details-header { min-width: 7.5rem; }
+    .details-value { font-size: 1rem; }
+  }
+}
+
+.details-view-rating {
+  width: 30rem;
+
+  .details-group {
+    font-size: 1.15rem;
+
+    .details-header { min-width: 14rem; }
+    .details-value { font-size: 1rem; }
+  }
+}
+
+@media (max-width: map.get($breakpoints, "md")) {
+  .details-view, .details-view-rating {
+    width: 100%;
+  }
+}

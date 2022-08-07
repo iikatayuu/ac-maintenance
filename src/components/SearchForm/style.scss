@@ -1,0 +1,39 @@
+
+@use "sass:map";
+@import "../../styles/variables";
+
+.search-form {
+  width: 18rem;
+  min-width: 18rem;
+}
+
+@media (max-width: map.get($breakpoints, "lg")) {
+  .search-form {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+
+  .details-group {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    font-size: .9rem;
+
+    .details-header {
+      min-width: 75px;
+      word-wrap: break-word;
+    }
+
+    .details-value {
+      flex-grow: 1;
+      font-size: .9rem;
+      font-weight: bold;
+    }
+  }
+}
