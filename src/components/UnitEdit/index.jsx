@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 
 import selectize from '../../utils/selectize';
 import PaperPlaneIcon from '../../assets/svgs/paper-plane.svg';
+import XIcon from '../../assets/svgs/x.svg';
 import './style.scss';
 
 class UnitEdit extends React.Component {
@@ -175,7 +176,9 @@ class UnitEdit extends React.Component {
             <h3>Edit AC Unit ID: { unitId }</h3>
             <div>
               <NavLink to={`/unit/${unitId}`} className="btn mr-2" role="button">View</NavLink>
-              <a href="#" className="btn btn-danger" role="button" onClick={window.close}>Close</a>
+              <a href="#" className="btn btn-danger" role="button" onClick={window.close}>
+                <XIcon width={16} height={16} fill="currentColor" className="fa mr-2" /> Close
+              </a>
             </div>
           </div>
 
