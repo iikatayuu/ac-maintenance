@@ -186,7 +186,7 @@ CREATE TABLE `operations` (
   `description` text NOT NULL COMMENT 'Operation description and details',
   `date_start` datetime NOT NULL COMMENT 'Starting date of the operation',
   `date_end` datetime NOT NULL COMMENT 'Ending date of the operation'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
