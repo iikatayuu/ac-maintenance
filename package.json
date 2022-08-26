@@ -54,7 +54,7 @@
     "@selectize/selectize": "^0.13.6",
     "axios": "^0.27.2",
     "express": "^4.18.1",
-    "jquery": "^3.6.0",
+    "jquery": "^3.6.1",
     "microplugin": "^0.0.3",
     "mysql": "^2.18.1",
     "sifter": "^0.5.4"
